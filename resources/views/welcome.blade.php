@@ -11,7 +11,7 @@
                             LEARN FROM EXPERT
                         </p>
                         <h1 class="header">
-                            Start Your <span class="text-purple">Developer <br> Journey</span> Today
+                            Start Your <span class="text-purple">Developer utfutf<br> Journey</span> Today
                         </h1>
                         <p class="support">
                             Our bootcamp is helping junior developers who <br> are really passionate in the programming.

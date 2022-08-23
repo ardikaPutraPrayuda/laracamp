@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\User\CheckoutController;
@@ -20,14 +21,18 @@ Route::get('/', function () {
 })->name('welcome');
 
 
-Route::get('/checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
-Route::get('/checkout/{camp:slug}', [CheckoutController::class, 'create'])->name('checkout.create');
-Route::post('/checkout/{camp}', [CheckoutController::class, 'store'])->name('checkout.store');
+Route::middleware(['auth'])->group(function(){
+    //checkout
+    Route::get('/checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
+    Route::get('/checkout/{camp:slug}', [CheckoutController::class, 'create'])->name('checkout.create');
+    Route::post('/checkout/{camp}', [CheckoutController::class, 'store'])->name('checkout.store');
+    //user dashboard
+    Route::get('dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
+});
 
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
 
 // socialite routes
 Route::get('sign-in-google', [UserController::class, 'google'])->name('user.login.google');

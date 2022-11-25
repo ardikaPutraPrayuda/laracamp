@@ -53,4 +53,8 @@ Route::middleware(['auth'])->group(function(){
 Route::get('sign-in-google', [UserController::class, 'google'])->name('user.login.google');
 Route::get('auth/google/callback', [UserController::class, 'handleProviderCallback'])->name('user.login.callback');
 
+//midtrans route
+route::get('payment/success', [UserController::class, 'midtransCallback']);
+route::post('payment/success', [UserController::class, 'midtransCallback']);
+
 require __DIR__.'/auth.php';

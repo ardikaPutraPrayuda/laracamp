@@ -54,7 +54,7 @@ Route::get('sign-in-google', [UserController::class, 'google'])->name('user.logi
 Route::get('auth/google/callback', [UserController::class, 'handleProviderCallback'])->name('user.login.callback');
 
 //midtrans route
-route::get('payment/success', [UserController::class, 'midtransCallback']);
-route::post('payment/success', [UserController::class, 'midtransCallback']);
+route::get('payment/success', [CheckoutController::class, 'midtransCallback']);
+route::post('payment/success', [CheckoutController::class, 'midtransCallback']);
 
 require __DIR__.'/auth.php';

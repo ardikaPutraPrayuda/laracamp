@@ -8,17 +8,14 @@
                 <div class="row">
                     <div class="col-lg-6 col-12 copywriting">
                         <p class="story">
-                            LEARN FROM EXPERT
+                            SELAMAT DATANG DI PPDB ONLINE
                         </p>
                         <h1 class="header">
-                            Start Your <span class="text-purple">Developer <br> Journey</span> Today
+                            <span class="text-orange">YAYASAN PENDIDIKAN</span> CENDANA RIAU
                         </h1>
-                        <p class="support">
-                            Our bootcamp is helping junior developers who <br> are really passionate in the programming.
-                        </p>
                         <p class="cta">
-                            <a href="#" class="btn btn-master btn-primary">
-                                Get Started
+                            <a href="{{ route('login') }}" class="btn btn-master btn-primary">
+                                Daftar Siswa Baru
                             </a>
                         </p>
                     </div>
@@ -28,11 +25,6 @@
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row brands">
-            <div class="col-lg-12 col-12 text-center">
-                <img src="{{ asset('images/brands.png') }}" alt="">
             </div>
         </div>
     </div>
@@ -56,10 +48,10 @@
                 <div class="item-benefit">
                     <img src="{{ asset('images/ic_globe.png') }}" class="icon" alt="">
                     <h3 class="title">
-                        Diversity
+                        ENVIRONMENT
                     </h3>
                     <p class="support">
-                        Learn from anyone around the <br> world and get a new skills
+                        LINGKUNGAN SEKOLAH AMAN DAN NYAMAN & SARANA PRASARANA YANG LENGKAP
                     </p>
                 </div>
             </div>
@@ -67,10 +59,10 @@
                 <div class="item-benefit">
                     <img src="{{ asset('images/ic_globe-1.png') }}" class="icon" alt="">
                     <h3 class="title">
-                        A.I Guideline
+                        TEACHER
                     </h3>
                     <p class="support">
-                        Lara will help you to choose <br> which path that suitable for you
+                        GURU BERKUALITAS DAN BERSERTIFIKAT
                     </p>
                 </div>
             </div>
@@ -78,10 +70,10 @@
                 <div class="item-benefit">
                     <img src="{{ asset('images/ic_globe-2.png') }}" class="icon" alt="">
                     <h3 class="title">
-                        1-1 Mentoring
+                        EXTRACURRICULAR
                     </h3>
                     <p class="support">
-                        We will ensure that you will get <br> what you really do need
+                        ANEKA RAGAM EKSTRAKURIKULER
                     </p>
                 </div>
             </div>
@@ -89,10 +81,10 @@
                 <div class="item-benefit">
                     <img src="{{ asset('images/ic_globe-3.png') }}" class="icon" alt="">
                     <h3 class="title">
-                        Future Job
+                        FUTURE
                     </h3>
                     <p class="support">
-                        Get your dream job in your dream <br> company together with us
+                        BEKERJASAMA DENGAN PTN DAN PTS FAVORIT DI INDONESIA
                     </p>
                 </div>
             </div>
@@ -104,67 +96,57 @@
     <div class="container">
         <div class="row item-step pb-70">
             <div class="col-lg-6 col-12 text-center">
-                <img src="{{ asset('images/step1.png') }}" class="cover" alt="">
+                <img src="{{ asset('images/daftar.png') }}" class="cover" alt="">
             </div>
             <div class="col-lg-6 col-12 text-left copywriting">
                 <p class="story">
-                    BETTER CAREER
+                    Pendaftaran
                 </p>
-                <h2 class="primary-header">
-                    Prepare The Journey
-                </h2>
                 <p class="support">
-                    Learn from anyone around the <br> world and get a new skills
-                </p>
-                <p class="mt-5">
-                    <a href="#" class="btn btn-master btn-secondary me-3">
-                        Learn More
-                    </a>
+                    Lakukan pendaftaran secara online dengan mengisi form pendaftaran beserta bukti bayar pendaftaran yang telah disediakan di website.
                 </p>
             </div>
         </div>
         <div class="row item-step pb-70">
             <div class="col-lg-6 col-12 text-left copywriting pl-150">
                 <p class="story">
-                    STUDY HARDER
+                    Konfirmasi
                 </p>
-                <h2 class="primary-header">
-                    Finish The Project
-                </h2>
                 <p class="support">
-                    Each of you will be joining the private group and also <br> working together with team members on project
-                </p>
-                <p class="mt-5">
-                    <a href="#" class="btn btn-master btn-secondary me-3">
-                        View Demo
-                    </a>
+                    Konfirmasi dari kami akan segera datang melalui E-mail resmi kami yang berisi informasi konfirmasi pembayaran PPDB.
                 </p>
             </div>
             <div class="col-lg-6 col-12 text-center">
-                <img src="{{ asset('images/step2.png') }}" class="cover" alt="">
+                <img src="{{ asset('images/konfirmasi.png') }}" class="cover" alt="">
             </div>
 
         </div>
         <div class="row item-step">
             <div class="col-lg-6 col-12 text-center">
-                <img src="{{ asset('images/step3.png') }}" class="cover" alt="">
+                <img src="{{ asset('images/pembayaran.png') }}" class="cover" alt="">
             </div>
             <div class="col-lg-6 col-12 text-left copywriting">
                 <p class="story">
-                    END GAME
+                    Pembayaran
                 </p>
-                <h2 class="primary-header">
-                    Big Demo Day
-                </h2>
                 <p class="support">
-                    Learn how to speaking in public to demonstrate your <br> final project and receive the important feedbacks
-                </p>
-                <p class="mt-5">
-                    <a href="#" class="btn btn-master btn-secondary me-3">
-                        Showcase
-                    </a>
+                    Lakukan Pembayaran dengan masuk ke halaman dashboard dan mengklik tombol “bayar disini”
                 </p>
             </div>
+        </div>
+        <div class="row item-step pb-70">
+            <div class="col-lg-6 col-12 text-left copywriting pl-150">
+                <p class="story">
+                    Melengkapi Data
+                </p>
+                <p class="support">
+                    Ketika berhasil login, lakukan pembayaran sekaligus dengan melengkapi data personal melalui form yang tersedia
+                </p>
+            </div>
+            <div class="col-lg-6 col-12 text-center">
+                <img src="{{ asset('images/melengkapi data.png') }}" class="cover" alt="">
+            </div>
+
         </div>
     </div>
 </section>
@@ -177,15 +159,10 @@
                     GOOD INVESTMENT
                 </p>
                 <h2 class="primary-header text-white">
-                    Start Your Journey
+                    Mulai Perjalananmu!
                 </h2>
                 <p class="support">
-                    Learn how to speaking in public to demonstrate your <br> final project and receive the important feedbacks
-                </p>
-                <p class="mt-5">
-                    <a href="#" class="btn btn-master btn-thirdty me-3">
-                        View Syllabus
-                    </a>
+                    Ayo daftar ke Yayasan Pendidikan Cendana Riau!
                 </p>
             </div>
             <div class="col-lg-7 col-12">
@@ -193,15 +170,15 @@
                     <div class="col-lg-6 col-12">
                         <div class="table-pricing paket-gila">
                             <p class="story text-center">
-                                GILA BELAJAR
+                                Biaya Pendaftaran
                             </p>
                             <h1 class="price text-center">
-                                $280K
+                                Rp.150K
                             </h1>
                             <div class="item-benefit-pricing mb-4">
                                 <img src="{{ asset('images/ic_check.svg') }}" alt="">
                                 <p>
-                                    Pro Techstack Kit
+                                    Guru Berkualitas
                                 </p>
                                 <div class="clear"></div>
                                 <div class="divider"></div>
@@ -209,7 +186,7 @@
                             <div class="item-benefit-pricing mb-4">
                                 <img src="{{ asset('images/ic_check.svg') }}" alt="">
                                 <p>
-                                    iMac Pro 2021 & Display
+                                    Fasilitas Lengkap
                                 </p>
                                 <div class="clear"></div>
                                 <div class="divider"></div>
@@ -217,7 +194,7 @@
                             <div class="item-benefit-pricing mb-4">
                                 <img src="{{ asset('images/ic_check.svg') }}" alt="">
                                 <p>
-                                    1-1 Mentoring Program
+                                    Pendidikan Terjamin
                                 </p>
                                 <div class="clear"></div>
                                 <div class="divider"></div>
@@ -233,7 +210,7 @@
                             <div class="item-benefit-pricing mb-4">
                                 <img src="{{ asset('images/ic_check.svg') }}" alt="">
                                 <p>
-                                    Offline Course Videos
+                                    Future Best University
                                 </p>
                                 <div class="clear"></div>
                                 <div class="divider"></div>
@@ -249,7 +226,7 @@
                             <div class="item-benefit-pricing mb-4">
                                 <img src="{{ asset('images/ic_check.svg') }}" alt="">
                                 <p>
-                                    Premium Design Kit
+                                    Seragam Terbaru
                                 </p>
                                 <div class="clear"></div>
                                 <div class="divider"></div>
@@ -257,13 +234,13 @@
                             <div class="item-benefit-pricing">
                                 <img src="{{ asset('images/ic_check.svg') }}" alt="">
                                 <p>
-                                    Website Builder
+                                    FUTURE
                                 </p>
                                 <div class="clear"></div>
                             </div>
                             <p>
-                                <a href="{{ route('checkout.create', 'gila-belajar') }}" class="btn btn-master btn-primary w-100 mt-3">
-                                    Take This Plan
+                                <a href="{{ route('checkout.create', 'pendaftaran') }}" class="btn btn-master btn-primary w-100 mt-3">
+                                    Daftar Sekarang
                                 </a>
                             </p>
                         </div>
@@ -271,15 +248,15 @@
                     <div class="col-lg-6 col-12">
                         <div class="table-pricing paket-biasa">
                             <p class="story text-center">
-                                BARU MULAI
+                                Sumbangan Penyelenggaraan Pendidikan (SPP)
                             </p>
                             <h1 class="price text-center">
-                                $140K
+                                Rp.450k
                             </h1>
                             <div class="item-benefit-pricing mb-4">
                                 <img src="{{ asset('images/ic_check.svg') }}" alt="">
                                 <p>
-                                    1-1 Mentoring Program
+                                    Fasilitas Terjaga
                                 </p>
                                 <div class="clear"></div>
                                 <div class="divider"></div>
@@ -295,7 +272,7 @@
                             <div class="item-benefit-pricing mb-4">
                                 <img src="{{ asset('images/ic_check.svg') }}" alt="">
                                 <p>
-                                    Offline Course Videos
+                                    Pendidikan Terjamin
                                 </p>
                                 <div class="clear"></div>
                                 <div class="divider"></div>
@@ -303,23 +280,18 @@
                             <div class="item-benefit-pricing">
                                 <img src="{{ asset('images/ic_check.svg') }}" alt="">
                                 <p>
-                                    Future Job Opportinity
+                                    Future University Opportinity
                                 </p>
                                 <div class="clear"></div>
                             </div>
                             <p>
-                                <a href="{{ route('checkout.create', 'baru-mulai') }}" class="btn btn-master btn-secondary w-100 mt-3">
-                                    Start With This Plan
+                                <a href="{{ route('checkout.create', 'spp') }}" class="btn btn-master btn-secondary w-100 mt-3">
+                                    Bayar Sekarang
                                 </a>
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row pb-70">
-            <div class="col-lg-12 col-12 text-center">
-                <img src="{{ asset('images/brands.png') }}" height="30" alt="">
             </div>
         </div>
     </div>
@@ -333,75 +305,23 @@
                     SUCCESS STUDENTS
                 </p>
                 <h2 class="primary-header">
-                    We Really Love Laracamp
+                    We Really Love Yayasan Pendidikan Cendana Riau
                 </h2>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-10 col-12">
-                <div class="row">
-                    <div class="col-lg-4 col-12">
-                        <div class="item-review">
-                            <img src="{{ asset('images/stars.svg') }}" alt="">
-                            <p class="message">
-                                I was not really into code but after they teach me how to train my logic then I was really fall in love with code
-                            </p>
-                            <div class="user">
-                                <img src="{{ asset('images/fanny_photo.png') }}" class="photo" alt="">
-                                <div class="info">
-                                    <h4 class="name">
-                                        Fanny
-                                    </h4>
-                                    <p class="role">
-                                        Developer at Google
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item-review">
-                            <img src="{{ asset('images/stars.svg') }}" alt="">
-                            <p class="message">
-                                Code is really important if we want to build a company and strike to the win
-                            </p>
-                            <div class="user">
-                                <img src="{{ asset('images/angga.png') }}" class="photo" alt="">
-                                <div class="info">
-                                    <h4 class="name">
-                                        Angga
-                                    </h4>
-                                    <p class="role">
-                                        CEO at BWA Corp
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item-review">
-                            <img src="{{ asset('images/stars.svg') }}" alt="">
-                            <p class="message">
-                                My background is design and art but I do really love how to make my design working in the development phase
-                            </p>
-                            <div class="user">
-                                <img src="{{ asset('images/beatrice.png') }}" class="photo" alt="">
-                                <div class="info">
-                                    <h4 class="name">
-                                        Beatrice
-                                    </h4>
-                                    <p class="role">
-                                        QA at Facebook
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="row copyright">
                     <div class="col-lg-12 col-12">
                         <p>
-                            All Rights Reserved. Copyright Laracamp BWA Indonesia.
+                            All Rights Reserved. Copyright Yayasan Pendidikan Cendana Riau.
+                        </p>
+                        <p>
+                            Kontak Kami!
+                            <br>Kompleks Enau, PT. Pertamina Hulu Rokan Rumbai, Kota Pekanbaru Provinsi Riau - Indonesia
+                            <br>(0761) 559020, 559021
+                            <br>0761 - 559045
+                            <br>ypcriau@gmail.com
                         </p>
                     </div>
                 </div>

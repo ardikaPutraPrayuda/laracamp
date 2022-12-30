@@ -9,7 +9,7 @@
                     DASHBOARD
                 </p>
                 <h2 class="primary-header ">
-                    My Bootcamps
+                    DAFTAR TAGIHAN
                 </h2>
             </div>
         </div>
@@ -19,9 +19,6 @@
                 <tbody>
                     @forelse ($checkouts as $checkout)
                     <tr class="align-middle">
-                        <td width="18%">
-                            <img src="{{ asset('images/item_bootcamp.png') }}" height="120" alt="">
-                        </td>
                         <td>
                             <p class="mb-2">
                                 <strong>{{ $checkout->Camp->title }}</strong>
@@ -31,26 +28,21 @@
                             </p>
                         </td>
                         <td>
-                            <strong>${{ $checkout->Camp->price }}k</strong>
+                            <strong>Rp.{{ $checkout->Camp->price }}k</strong>
                         </td>
                         <td>
                             <strong>{{ $checkout->payment_status }}</strong>
                         </td>
                         <td>
                             @if ($checkout->payment_status == 'waiting')
-                                <a href="{{ $checkout->midtrans_url }}" class="btn btn-primary">Pay Here</a>
+                                <a href="{{ $checkout->midtrans_url }}" class="btn btn-primary">Bayar Disini</a>
                             @endif
-                        </td>
-                        <td>
-                            <a href="https:/wa.me/082213885288?text=Hi, saya ingin bertanya tentang kelas {{ $checkout->Camp->title }}" class="btn btn-primary">
-                                Contact Support
-                            </a>
                         </td>
                     </tr>
                     @empty
                     <tr>
                         <td colspan="5">
-                            <h3>No Camp Registered</h3>
+                            <h3>Tidak ada tagihan untuk saat ini</h3>
                         </td>
                     </tr>
                     @endforelse

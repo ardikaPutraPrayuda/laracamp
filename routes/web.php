@@ -7,6 +7,8 @@ use App\Http\Controllers\User\CheckoutController;
 use App\Http\Controllers\User\DashboardController as UserDashboard;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboard;
 use App\Http\Controllers\Admin\CheckoutController as AdminCheckout;
+use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\SchoolfeeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +50,9 @@ Route::middleware(['auth'])->group(function(){
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth'])->name('dashboard');
+
+Route::get('schedule', [ScheduleController::class, 'index'])->name('schedule');
+Route::get('schoolfee', [SchoolfeeController::class, 'index'])->name('fee');
 
 // socialite routes
 Route::get('sign-in-google', [UserController::class, 'google'])->name('user.login.google');

@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <title>Laracamp by BuildWith Angga</title>
+    <title>PPDB Yayasan Pendidikan Cendana Riau</title>
 </head>
 
 <body>
@@ -23,8 +23,7 @@
         <div class="left">
             <img src="{{ asset('images/ill_login_new.png') }}" alt="">
         </div>
-        <div class="right">
-            <img src="{{ asset('images/logo.png') }}" class="logo" alt="">
+        <div class="right"> 
             <h1 class="header-third">
                 Start Today
             </h1>
@@ -36,7 +35,6 @@
                     <img src="{{ asset('images/ic_google.svg') }}" class="icon" alt=""> Sign In with Google
                 </a>
             </p>
-            <img src="{{ asset('images/people.png') }}" class="people" alt="">
         </div>
     </section>
 

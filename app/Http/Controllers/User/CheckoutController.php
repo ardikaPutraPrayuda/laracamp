@@ -41,13 +41,6 @@ class CheckoutController extends Controller
      */
     public function create(Camp $camp, Request $request)
     {
-        // return $camp;
-        // return $request->all();
-        if($camp->isRegistered){
-            $request->session()->flash('error', "You already registered on {$camp->title} camp.");
-            return redirect(route('user.dashboard'));
-        }
-
         return view('checkout.create', [
             'camp' => $camp
         ]);
@@ -191,63 +184,6 @@ class CheckoutController extends Controller
             return false;
         }
     }
-    /**
-     * midtrans handler
-     */
-    // public function getSnapRedirect(Checkout $checkout)
-    // {
-    //     $orderId = $checkout->id.'-'.Str::random(5);
-    //     $price = $checkout->Camp->price * 1000;
-    //     $checkout->midtrans_booking_code = $orderId;
-
-    //     $transaction_details = [
-    //         'order_id' => $orderId,
-    //         'gross_amount' => $price,
-    //     ];
-
-    //     $item_details = [
-    //         'id' => $orderId,
-    //         'price' => $price,
-    //         'quantity' => 1,
-    //         'name' => "Payment for {$checkout->Camp->title} Camp",
-    //     ];
-
-    //     $userData = [
-    //         "first_name" => $checkout->User->name,
-    //         "last_name" => "",
-    //         "address" => $checkout->User->address,
-    //         "city" => "",
-    //         "postal_code" => "",
-    //         "phone" => $checkout->User->phone,
-    //         "country_code" => "idn"
-    //     ];
-
-    //     $customer_details = [
-    //         "first_name" => $checkout->User->name,
-    //         "last_name" => "",
-    //         "email" => $checkout->User->email,
-    //         "phone" => $checkout->User->phone,
-    //         "billing_address" => $userData,
-    //         "shipping_address" => $userData,
-    //     ];
-
-    //     $midtrans_params = [
-    //         'transaction_details' => $transaction_details,
-    //         'customer_details' => $customer_details,
-    //         'item_details' => $item_details,
-    //     ];
-
-    //     try {
-    //         // get snap payment url
-    //         $paymentUrl = \Midtrans\Snap::createTransaction($midtrans_params)->redirect_url;
-    //         $checkout->midtrans_url = $paymentUrl;
-    //         $checkout->save();
-
-    //         return $paymentUrl;
-    //     } catch (Exception $e) {
-    //         return false;
-    //     }
-    // }
 
     public function midtransCallback (Request $request)
     {
@@ -299,9 +235,4 @@ class CheckoutController extends Controller
         $checkout->save();
         return view('checkout.success');
     }
-
-    // public function invoice(Checkout $checkout)
-    // {
-    //     return $checkout;
-    // }
 }

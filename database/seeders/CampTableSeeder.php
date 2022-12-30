@@ -19,16 +19,16 @@ class CampTableSeeder extends Seeder
     {
         $camps = [
             [
-                'title' => 'Gila Belajar',
-                'slug' => 'gila-belajar',
-                'price' => 280,
+                'title' => 'Pendaftaran',
+                'slug' => 'pendaftaran',
+                'price' => 150,
                 'created_at' => date('Y-m-d H:i:s', time()),
                 'updated_at' => date('Y-m-d H:i:s', time()),
             ],
             [
-                'title' => 'Baru Mulai',
-                'slug' => 'baru-mulai',
-                'price' => 140,
+                'title' => 'Sumbangan Penyelenggaraan Pendidikan',
+                'slug' => 'spp',
+                'price' => 450,
                 'created_at' => date('Y-m-d H:i:s', time()),
                 'updated_at' => date('Y-m-d H:i:s', time()),
             ]

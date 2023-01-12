@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\DashboardController as AdminDashboard;
 use App\Http\Controllers\Admin\CheckoutController as AdminCheckout;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\SchoolfeeController;
+use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,10 +48,12 @@ Route::middleware(['auth'])->group(function(){
     });
 });
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth'])->name('dashboard');
+//Profil Siswa
+Route::get('student/{user}', [StudentController::class, 'index'])->name('student.index');
+Route::get('student/{user}/edit', [StudentController::class, 'edit'])->name('student.edit');
+Route::get('student/{user}/edit', [StudentController::class, 'update']);
 
+//jadwal dan biaya
 Route::get('schedule', [ScheduleController::class, 'index'])->name('schedule');
 Route::get('schoolfee', [SchoolfeeController::class, 'index'])->name('fee');
 
